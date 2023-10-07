@@ -15,8 +15,8 @@
             txt += `<table>`;
             txt += `<tr>`;
           
-            for (const kulcs in this.KULCS[0]) {
-                txt += `<th>${this.KULCS[0][kulcs]}</th>`;
+            for (const kulcs in this.TODOLIST[0]) {
+                txt += `<th>${this.TODOLIST[0][kulcs]}</th>`;
               }
             
             txt += `</tr>`
@@ -24,10 +24,10 @@
             
         
             
-            for (let index = 0; index < this.LISTA.length; index++) {
+            for (let index = 0; index < this.TODOLIST2.length; index++) {
                 txt += `<tr>`;
-              for (const kulcs in this.LISTA[index]) {
-                txt += `<td>${this.LISTA[index][kulcs]}</td>`;
+              for (const kulcs in this.TODOLIST2[index]) {
+                txt += `<td>${this.TODOLIST2[index][kulcs]}</td>`;
               }
               txt += `</tr>`;
     
